@@ -9,12 +9,12 @@ export default class AuthConfig {
         this.publicKey = process.env.PUBLIC_KEY;
     }
 
-    getPrivateKey(){
-        return this.privateKey;
+    getPrivateKey() : string {
+        return this.privateKey!;
     }
 
-    getPublicKey(){
-        return this.publicKey;
+    getPublicKey() : string{
+        return this.publicKey!;
     }
 
 }
