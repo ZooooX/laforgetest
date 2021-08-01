@@ -3,13 +3,13 @@
  * 
  * Make sure to save the private key elsewhere after generated!
  */
-const crypto = require('crypto');
+const crypt = require('crypto');
 const fs = require('fs');
 
 function genKeyPair() {
     
     // Generates an object where the keys are stored in properties `privateKey` and `publicKey`
-    const keyPair = crypto.generateKeyPairSync('rsa', {
+    const keyPair = crypt.generateKeyPairSync('rsa', {
         modulusLength: 4096, // bits - standard for RSA keys
         publicKeyEncoding: {
             type: 'pkcs1', // "Public Key Cryptography Standards 1" 
