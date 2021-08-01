@@ -1,24 +1,19 @@
-import fs from "fs";
-import path from "path";
-
 export default class AuthConfig {
     
-    private privateKey : string;
-    private publicKey : string;
+    private privateKey : string | undefined;
+    private publicKey : string | undefined;      
     
     constructor(){
-        const pathToPrivateKey = path.join(__dirname, '/keys/id_rsa_priv.pem');
-        const pathToPublicKey = path.join(__dirname, '/keys/id_rsa_pub.pem');
 
-        this.privateKey = fs.readFileSync(pathToPrivateKey,"utf8");
-        this.publicKey = fs.readFileSync(pathToPublicKey,"utf8");
+        this.privateKey = process.env.PRIVATE_KEY;
+        this.publicKey = process.env.PUBLIC_KEY;
     }
 
-    getPrivateKey() : string{
+    getPrivateKey(){
         return this.privateKey;
     }
 
-    getPublicKey() : string {
+    getPublicKey(){
         return this.publicKey;
     }
 
