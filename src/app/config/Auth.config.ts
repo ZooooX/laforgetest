@@ -16,5 +16,4 @@ export default class AuthConfig {
     getPublicKey() : string{
         return this.publicKey!;
     }
-
 }
