@@ -25,7 +25,7 @@ export default class Utils {
         privateKey,
         {
             algorithm : "RS256",
-            expiresIn : "1h"
+            expiresIn : "20s"
         });
     }
 }

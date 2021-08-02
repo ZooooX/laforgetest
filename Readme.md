@@ -29,7 +29,7 @@ A connected user can like or unlike pokemons and then get his liked pokemons.
             - You must format the private key and public key like so : "-----RSA PUBLIC KEY------\nyiezgifzuefiuzef\n-----END RSA PUBLIC KEY-----" (1 line, carriage return replaced by \n, line between quotes)  
             - Then create a .env file in the project, set variables DB_URI (database connection), PORT (application port)  
             - Then add the RSA keys as env variables PRIVATE_KEY and PUBLIC_KEY (jwt signging and verifying keys)
-            - Also, change the lines in Auth.config.ts to dev mode in config folder
+            - Also, change the lines in Auth.config.ts to dev mode in config folder (Dev mode is for Heroku env variables to work)
 
         - Use :  
             - Start in dev mode : npm run dev  
