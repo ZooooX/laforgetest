@@ -8,8 +8,7 @@ Related Links :
     - Source Code : https://github.com/ZooooX/laforgetest
 
 
-How to run :
-
+How to run :  
     Deployed api : Endpoints available in api doc.  
 
     Local :  
