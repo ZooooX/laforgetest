@@ -6,12 +6,12 @@ export default class AuthConfig {
     constructor(){
 
         /* HEROKU PROD */
-        /*this.privateKey = JSON.parse(process.env.PRIVATE_KEY!);
-        this.publicKey = JSON.parse(process.env.PUBLIC_KEY!);*/
+        this.privateKey = JSON.parse(process.env.PRIVATE_KEY!);
+        this.publicKey = JSON.parse(process.env.PUBLIC_KEY!);
 
         /* LOCAL DEV*/
-        this.privateKey = process.env.PRIVATE_KEY;
-        this.publicKey = process.env.PUBLIC_KEY;
+        /*this.privateKey = process.env.PRIVATE_KEY;
+        this.publicKey = process.env.PUBLIC_KEY;*/
 
     }
 
