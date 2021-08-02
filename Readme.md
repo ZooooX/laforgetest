@@ -8,7 +8,7 @@ Here is the result of my technical test for La Forge. Instructions in Test.md fi
 - Mongoose
 - TypeScript
 
-**What you can do :**
+**What you can do :**  
 A user can get pokemon data, filter the search with name, num and type fields.  
 A user can Sign up with email and password, then sign in.
 A JWT is then used to get access to protected data.  
