@@ -20,6 +20,7 @@ export default class Db {
             });
     }
 
+    /*Create pokemons in database from the pokemons.json file if they are not already in the database */
     private initDB(){
         Pokemon.countDocuments((err,count) => {
             if(!err && count === 0 ){

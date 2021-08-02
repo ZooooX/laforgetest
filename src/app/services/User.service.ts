@@ -16,6 +16,10 @@ export default class UserService {
         return User.findOne({email : email}).exec();
     }
 
+    findById(userID : string){
+        return User.findById(userID).exec();
+    }
+
     addLikedPokemon(pokemonID : string , userID : string){
         return User.findOneAndUpdate({_id : userID} , {$push : {likedPokemons : pokemonID}}).exec();
     }

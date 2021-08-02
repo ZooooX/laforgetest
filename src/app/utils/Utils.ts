@@ -13,6 +13,7 @@ export default class Utils {
         return bcrypt.compareSync(password, hashedPassword);
     }
 
+    /* Create JWT with userID in payload, RSA private key as secret */
     static createJWT (userID : string){
         const authConfig : AuthConfig = new AuthConfig();
 

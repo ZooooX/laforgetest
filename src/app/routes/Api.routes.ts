@@ -1,4 +1,4 @@
-import { Application, Router } from "express";
+import { Application, Router, Request , Response } from "express";
 import AuthRoutes from "./Auth.routes";
 import PokemonRoutes from "./Pokemon.routes";
 import UserRoutes from "./User.routes";
@@ -23,5 +23,9 @@ export default class ApiRoutes {
         router.use("/user", userRoutes.getRouter());
 
         this.app.use('/api',router);
+
+        this.app.use('/',(req : Request, res : Response) => {
+            return res.send("Pokemon Api - La Forge Test | Find endpoints at https://documenter.getpostman.com/view/12964212/Tzsfm4qh");
+        });
     }
 }

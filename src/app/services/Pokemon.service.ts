@@ -18,7 +18,8 @@ export default class PokemonService {
         return Pokemon.findOneAndUpdate({_id : pokemonID}, {$pull : {likedBy : userID}}).exec();
     }
 
-    getWithCriterias(name : string, num : string, type : string){   
+    getWithCriterias(name : string, num : string, type : string){
+        //build query if filters
         let filter : any = {};
 
         if(name) {
