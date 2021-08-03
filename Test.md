@@ -12,18 +12,18 @@ We will be testing your ability to architecture a data model by looking at a pro
 
 The API you create shall allow to:
 
-- Get all pokemons, and filter them based on: //Done
+- Get all pokemons, and filter them based on:
 	- Name
 	- Number
 	- Type
 
-- Create a simple user account with a mail & password //Done
+- Create a simple user account with a mail & password
 
-- Authenticate using mail & password	//Done
+- Authenticate using mail & password     
 
-- As a connected user: Like/Unlike a pokemon //Done
+- As a connected user: Like/Unlike a pokemon 
 
-- As a connected user: get all liked pokemons	//Done
+- As a connected user: get all liked pokemons	
 
 
 **Technical notes**:
